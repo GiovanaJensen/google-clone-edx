@@ -37,14 +37,44 @@ nav img {
     background-color: #f5f5f5;
 }
 
-#sign_in {
+#sign_in,
+.button {
     min-width: 95px;
     padding: 10px;
-    background-color: #8ab4f8;
     border-radius: 4px;
     border: none;
 }
 
+#sign_in {
+    background-color: #8ab4f8;
+}
+
 #sign_in:hover {
     background-color: #8ecae6;
+}
+
+main {
+    text-align: center;
+}
+
+#input {
+    width: 40%;
+    height: 2rem;
+    border-radius: 20px;
+    border: 1px solid #8f8f8f;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    #input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    main img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
 }

@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: arial, sans-serif;
 }
@@ -6,6 +11,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 1rem;
 }
 
 nav a {
@@ -45,6 +51,10 @@ nav img {
     border: none;
 }
 
+.button:hover {
+    background-color: #e0e0e0;
+}
+
 #sign_in {
     background-color: #8ab4f8;
 }
@@ -65,9 +75,33 @@ main {
     margin-bottom: 1rem;
 }
 
+footer {
+    background-color: #e7e6e6;
+    padding: 1rem;
+    margin-top: 14.3%;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+.footer1,
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer1 {
+    border-top: 1px solid #d1d1d1;
+    padding: 0.5rem 0;
+}
+
 @media (max-width: 1024px) {
     #input {
         width: 90%;
+    }
+    footer {
+        display: none;
     }
 }
 
@@ -76,5 +110,8 @@ main {
         width: 80%;
         height: auto;
         object-fit: contain;
+    }
+    footer {
+        margin-top: 40%;
     }
 }
